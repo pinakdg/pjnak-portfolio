@@ -2,14 +2,14 @@
 
 A one-page, modular React + Tailwind portfolio with a terminal-typing hero, projects, blog, and contact form.
 
-## ✨ Features
+## Features
 - **Terminal-style hero** with typing effect (editable lines in `src/config.js`).
 - **Projects** driven by a simple data file (`src/data/projects.js`).
 - **Blog** as lightweight notes (`src/data/posts.js`), easy to extend to Markdown later.
 - **Contact form** defaults to `mailto:`; can be wired to Formspree/EmailJS.
 - **Responsive** and accessible; sticky header, smooth scrolling.
 
-## 🚀 Quickstart
+## Quickstart
 ```bash
 # 1) Install deps
 npm install
@@ -22,14 +22,14 @@ npm run build
 npm run preview   # to test the build locally
 ```
 
-## 🔧 Dependencies
+## Dependencies
 - Node.js 18+ recommended
 - Vite 5, React 18
 - Tailwind CSS 3
 
 If you don't have Node, install from https://nodejs.org (LTS is fine).
 
-## 🧩 How to edit content
+## How to edit content
 - **GitHub link**: `src/config.js` (GITHUB_URL).
 - **Typing lines**: `src/config.js` (HERO_LINES array).
 - **Projects**: `src/data/projects.js` — add, remove, reorder objects.
@@ -43,7 +43,7 @@ If you don't have Node, install from https://nodejs.org (LTS is fine).
 ```
 > Later, you can swap this for Markdown by adding a `/posts` folder and a loader.
 
-## ✉️ Enable contact form submissions (no mail client)
+## Enable contact form submissions (no mail client)
 1. **Formspree** (quickest):
    - Create a form at https://formspree.io
    - Get your endpoint URL and set `ACTION_URL` in `src/components/ContactForm.jsx`.
@@ -52,7 +52,7 @@ If you don't have Node, install from https://nodejs.org (LTS is fine).
    - Create service/template at https://www.emailjs.com/
    - Install SDK, call it from `handleSubmit`.
 
-## 📦 Deploy options
+## Deploy options
 ### GitHub Pages
 1. Create a repo named `pjnak-portfolio` and push this project.
 2. Add the following to `vite.config.js` if deploying to `username.github.io/repo`:
@@ -77,7 +77,7 @@ export default defineConfig({ base: '/pjnak-portfolio/', plugins: [react()] })
 ### Vercel
 - Import the repo in Vercel; framework: **Vite**; build `npm run build`, output `dist`.
 
-## 🗂️ Structure
+## Structure
 ```
 pjnak-portfolio/
   ├─ index.html
@@ -102,10 +102,10 @@ pjnak-portfolio/
         └─ posts.js
 ```
 
-## 🧼 Code style
+## Code style
 - `npm run format` uses Prettier.
 
-## ✅ Accessibility
+## Accessibility
 - Semantic headings and labels, sufficient contrast, keyboard-friendly.
 
 ---
