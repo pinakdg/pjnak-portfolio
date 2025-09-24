@@ -17,9 +17,9 @@ export default function App(){
           <nav className="flex items-center gap-3 text-sm">
             <a className="hover:underline" href="#about">about</a>
             <a className="hover:underline" href="#projects">projects</a>
-            <a className="hover:underline" href="#blog">blog</a>
+            <a className="hover:underline" href="#blog">blog posts</a>
             <a className="hover:underline" href="#skills">skills</a>
-            <a className="hover:underline" href="#contact">contact</a>
+            <a className="hover:underline" href="#contact">contact me</a>
             <a className="hover:underline" href="#funfacts">fun facts</a>
             {/* CV button (put your file at /public/cv.pdf to activate download) */}
             <a className="px-3 py-1 rounded-lg border border-gray-700 hover:border-gray-500"
