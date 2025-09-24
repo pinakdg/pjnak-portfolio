@@ -10,7 +10,7 @@ export default function App(){
     <div className="min-h-screen flex flex-col">
       <header className="sticky top-0 z-40 backdrop-blur bg-gray-950/70 border-b border-gray-800">
         <div className="max-w-6xl mx-auto px-4 py-3 flex items-center justify-between">
-          <a href="#top" className="font-semibold">Pinak</a>
+          <a href="#top" className="font-semibold">pjnak</a>
           <nav className="flex items-center gap-4 text-sm">
             <a className="hover:underline" href="#projects">Projects</a>
             <a className="hover:underline" href="#blog">Blog</a>
