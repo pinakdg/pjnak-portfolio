@@ -12,7 +12,6 @@ export default function ContactForm(){
   return (
     <form onSubmit={handleSubmit} className="max-w-xl">
       <h2 className="text-2xl md:text-3xl font-semibold mb-4">Contact</h2>
-      <p className="text-sm text-gray-400 mb-4">This form will open your mail client by default. To enable form submissions without email, connect Formspree/EmailJS (see README).</p>
       <div className="grid gap-3">
         <label className="text-sm">
           Name

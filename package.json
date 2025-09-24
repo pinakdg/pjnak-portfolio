@@ -7,7 +7,8 @@
     "dev": "vite",
     "build": "vite build",
     "preview": "vite preview",
-    "format": "prettier --write ."
+    "predeploy": "npm run build && cp dist/index.html dist/404.html",
+    "deploy": "gh-pages -d dist"
   },
   "dependencies": {
     "react": "^18.3.1",
@@ -18,9 +19,10 @@
     "@types/react-dom": "^18.2.22",
     "@vitejs/plugin-react": "^5.0.3",
     "autoprefixer": "^10.4.20",
+    "gh-pages": "^6.3.0",
     "postcss": "^8.4.41",
     "prettier": "^3.3.3",
     "tailwindcss": "^3.4.10",
-    "vite": "^5.4.8"
+    "vite": "^7.1.7"
   }
 }
