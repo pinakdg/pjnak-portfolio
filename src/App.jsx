@@ -1,0 +1,39 @@
+import TerminalHero from './components/TerminalHero.jsx'
+import Projects from './components/Projects.jsx'
+import BlogSection from './components/BlogSection.jsx'
+import ContactForm from './components/ContactForm.jsx'
+import Footer from './components/Footer.jsx'
+import { GITHUB_URL } from './config.js'
+
+export default function App(){
+  return (
+    <div className="min-h-screen flex flex-col">
+      <header className="sticky top-0 z-40 backdrop-blur bg-gray-950/70 border-b border-gray-800">
+        <div className="max-w-6xl mx-auto px-4 py-3 flex items-center justify-between">
+          <a href="#top" className="font-semibold">Pinak</a>
+          <nav className="flex items-center gap-4 text-sm">
+            <a className="hover:underline" href="#projects">Projects</a>
+            <a className="hover:underline" href="#blog">Blog</a>
+            <a className="hover:underline" href="#contact">Contact</a>
+            <a className="px-3 py-1 rounded-lg border border-gray-700 hover:border-gray-500" href={GITHUB_URL} target="_blank" rel="noreferrer">GitHub ↗</a>
+          </nav>
+        </div>
+      </header>
+      <main id="top" className="flex-1">
+        <section className="max-w-6xl mx-auto px-4">
+          <TerminalHero />
+        </section>
+        <section id="projects" className="max-w-6xl mx-auto px-4 py-12">
+          <Projects />
+        </section>
+        <section id="blog" className="max-w-6xl mx-auto px-4 py-12">
+          <BlogSection />
+        </section>
+        <section id="contact" className="max-w-6xl mx-auto px-4 py-12">
+          <ContactForm />
+        </section>
+      </main>
+      <Footer />
+    </div>
+  )
+}
