@@ -3,7 +3,7 @@ export default function About(){
     <section id="about" className="max-w-6xl mx-auto px-4 py-12">
       <h2 className="text-2xl md:text-3xl font-semibold mb-4">About</h2>
       <p className="text-gray-300">
-        hi im pinak, i like computers. i enjoy tinkering with software and hardware.
+        i like computers. i enjoy tinkering with software and hardware.
       </p>
     </section>
   )
