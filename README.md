@@ -1,5 +1,8 @@
 # pjnak-portfolio
 
+-link:
+https://pinakdg.github.io/pjnak-portfolio/
+
 A one-page, modular React + Tailwind portfolio with a terminal-typing hero, projects, blog, and contact form.
 
 ## Features
