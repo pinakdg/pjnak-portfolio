@@ -17,10 +17,10 @@ export default function BlogSection(){
           </article>
         ))}
       </div>
-      <div className="mt-4 text-xs text-gray-500">
+      {/* <div className="mt-4 text-xs text-gray-500">
         <p><strong>Note:</strong> If you want Markdown posts later, create a <code>/posts</code> folder and a simple loader,
         or hook a static site generator. For now, this keeps it one‑page and ultra‑simple.</p>
-      </div>
+      </div> */}
     </div>
   )
 }
