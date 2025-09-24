@@ -3,7 +3,7 @@ import posts from '../data/posts.js'
 export default function BlogSection(){
   return (
     <div>
-      <h2 className="text-2xl md:text-3xl font-semibold mb-6">Blog</h2>
+      <h2 className="text-2xl md:text-3xl font-semibold mb-6">blog</h2>
       {/*<p className="text-gray-400 text-sm mb-4">
         Add posts by editing <code className="px-1 py-0.5 rounded bg-gray-900 border border-gray-800">src/data/posts.js</code>.
         Each post is a minimal object with <code>title</code>, <code>date</code>, and <code>summary</code>.
