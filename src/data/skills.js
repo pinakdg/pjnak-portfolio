@@ -3,5 +3,5 @@ export const skills = [
 ];
 
 export const domains = [
-  "Security", "Malware", "Reverse engineering", "OS", "Forensics"
+  "Security", "Malware", "Reverse engineering", "OS", "Forensics", "Networking", "Penetration testing", "Bug bounty"
 ];

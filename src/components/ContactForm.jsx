@@ -14,15 +14,15 @@ export default function ContactForm(){
       <h2 className="text-2xl md:text-3xl font-semibold mb-4">contact</h2>
       <div className="grid gap-3">
         <label className="text-sm">
-          Name
+          name
           <input className="mt-1 w-full bg-gray-950 border border-gray-800 rounded-lg px-3 py-2" required />
         </label>
         <label className="text-sm">
-          Email
+          email
           <input type="email" className="mt-1 w-full bg-gray-950 border border-gray-800 rounded-lg px-3 py-2" required />
         </label>
         <label className="text-sm">
-          Message
+          message
           <textarea rows="5" className="mt-1 w-full bg-gray-950 border border-gray-800 rounded-lg px-3 py-2" required></textarea>
         </label>
       </div>

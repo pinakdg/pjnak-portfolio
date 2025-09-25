@@ -1,26 +1,41 @@
+import { useState } from 'react'
 import posts from '../data/posts.js'
+import MarkdownPost from './MarkdownPost.jsx'
 
 export default function BlogSection(){
+  const [openIdx, setOpenIdx] = useState(null)
+
   return (
-    <div>
-      <h2 className="text-2xl md:text-3xl font-semibold mb-6">blog</h2>
-      {/*<p className="text-gray-400 text-sm mb-4">
-        Add posts by editing <code className="px-1 py-0.5 rounded bg-gray-900 border border-gray-800">src/data/posts.js</code>.
-        Each post is a minimal object with <code>title</code>, <code>date</code>, and <code>summary</code>.
-      </p> */}
+    <section id="blog" className="max-w-6xl mx-auto px-4 py-12">
+      <h2 className="text-2xl md:text-3xl font-semibold mb-6">Blog</h2>
+
       <div className="space-y-4">
-        {posts.map(p => (
-          <article key={p.title} className="p-4 rounded-2xl border border-gray-800">
-            <h3 className="font-semibold">{p.title}</h3>
-            <p className="text-xs text-gray-400">{p.date}</p>
-            <p className="text-sm mt-2 text-gray-300">{p.summary}</p>
-          </article>
-        ))}
+        {posts.map((p, idx) => {
+          const isOpen = openIdx === idx
+          return (
+            <div key={p.title} className="rounded-2xl border border-gray-800">
+              <button
+                className="w-full text-left px-4 py-3 flex items-center justify-between gap-3"
+                onClick={() => setOpenIdx(isOpen ? null : idx)}
+                aria-expanded={isOpen}
+                aria-controls={`post-panel-${idx}`}
+              >
+                <div>
+                  <div className="font-semibold">{p.title}</div>
+                  <div className="text-xs text-gray-400">{p.date} {p.summary ? `• ${p.summary}` : ""}</div>
+                </div>
+                <span className={`transition-transform ${isOpen ? "rotate-90" : ""}`}>›</span>
+              </button>
+
+              {isOpen && (
+                <div id={`post-panel-${idx}`} className="px-4 pb-4">
+                  <MarkdownPost file={p.file} />
+                </div>
+              )}
+            </div>
+          )
+        })}
       </div>
-      {/* <div className="mt-4 text-xs text-gray-500">
-        <p><strong>Note:</strong> If you want Markdown posts later, create a <code>/posts</code> folder and a simple loader,
-        or hook a static site generator. For now, this keeps it one‑page and ultra‑simple.</p>
-      </div> */}
-    </div>
+    </section>
   )
 }
