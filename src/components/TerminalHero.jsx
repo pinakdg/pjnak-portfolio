@@ -30,7 +30,7 @@ export default function TerminalHero(){
   return (
     <div className="mt-10 grid md:grid-cols-2 gap-8 items-center">
       <div className="order-2 md:order-1">
-        <h1 className="text-3xl md:text-5xl font-semibold tracking-tight mb-3">hi i am pinak (also go by pjnak), literate in security and passionate in open source, feel free to contact me.</h1>
+        <h1 className="text-3xl md:text-5xl font-semibold tracking-tight mb-3">hi i am pinak, educated in security and passionate in open source, feel free to contact me.</h1>
         <p className="text-gray-400">malware evolution analysis • rust & c systems • clean, practical tooling.</p>
         <div className="mt-6 flex gap-3 text-sm">
           <a href="#projects" className="px-3 py-1.5 rounded-lg border border-gray-700 hover:border-gray-500">View Projects</a>
