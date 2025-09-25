@@ -22,8 +22,13 @@ export default function App(){
             <a className="hover:underline" href="#contact">contact me</a>
             <a className="hover:underline" href="#funfacts">fun facts</a>
             {/* CV button (put your file at /public/cv.pdf to activate download) */}
-            <a className="px-3 py-1 rounded-lg border border-gray-700 hover:border-gray-500"
-               href="/cv.pdf" download>cv download</a>
+            <a
+              className="px-3 py-1 rounded-lg border border-gray-700 hover:border-gray-500"
+              href={`${import.meta.env.BASE_URL}cv.pdf`}
+              download
+            >
+              CV
+            </a>
             <a className="px-3 py-1 rounded-lg border border-gray-700 hover:border-gray-500"
                href={GITHUB_URL} target="_blank" rel="noreferrer">GitHub ↗</a>
           </nav>
