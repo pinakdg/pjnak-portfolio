@@ -6,6 +6,8 @@ import Footer from './components/Footer.jsx'
 import About from './components/About.jsx'
 import Skills from './components/Skills.jsx'
 import FunFacts from './components/FunFacts.jsx'
+import Certificates from './components/Certificates.jsx';
+
 import { GITHUB_URL } from './config.js'
 
 export default function App(){
@@ -21,6 +23,8 @@ export default function App(){
             <a className="hover:underline" href="#skills">skills</a>
             <a className="hover:underline" href="#contact">contact me</a>
             <a className="hover:underline" href="#funfacts">fun facts</a>
+            <a className="hover:underline" href="#certs">certificates</a>
+
             {/* CV button (put your file at /public/cv.pdf to activate download) */}
             <a
               className="px-3 py-1 rounded-lg border border-gray-700 hover:border-gray-500"
@@ -42,6 +46,7 @@ export default function App(){
 
         <About />
         <Skills />
+        <Certificates />
 
         <section id="projects" className="max-w-6xl mx-auto px-4 py-12">
           <Projects />
