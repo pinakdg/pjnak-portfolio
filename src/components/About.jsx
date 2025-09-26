@@ -6,7 +6,7 @@ export default function About(){
         i like computers. i enjoy tinkering with software and hardware. 
         i am passionate about system level programming and secure coding. 
         i have experience with arch linux, kali linux, windows and mac-os. 
-        i am proficient in c, rust, python and bash scripting. 
+        i am proficient in c, jave, rust, python and bash scripting. 
         i have a keen interest in malware analysis and reverse engineering. 
         i also enjoy participating in ctf competitions and contributing to open source projects.
         outside of tech, i play the guitar, practice mixed martial arts, am into video games and everything related to motorcycles.

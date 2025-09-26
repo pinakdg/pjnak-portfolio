@@ -32,9 +32,9 @@ function CertCard({ title, issuer, date, credentialId, url, badge }) {
 export default function Certificates(){
   return (
     <section id="certs" className="max-w-6xl mx-auto px-4 py-12">
-      <h2 className="text-2xl md:text-3xl font-semibold mb-6">Certificates</h2>
+      <h2 className="text-2xl md:text-3xl font-semibold mb-6">certificates</h2>
       {certs.length === 0 ? (
-        <p className="text-gray-400 text-sm">No certificates yet.</p>
+        <p className="text-gray-400 text-sm">no certificates yet.</p>
       ) : (
         <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-5">
           {certs.map(c => <CertCard key={`${c.title}-${c.credentialId || c.url}`} {...c} />)}
