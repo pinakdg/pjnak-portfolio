@@ -44,7 +44,7 @@ export default function ContactForm(){
 
   return (
     <form ref={formRef} onSubmit={handleSubmit} className="max-w-xl">
-      <h2 className="text-2xl md:text-3xl font-semibold mb-4">Contact</h2>
+      <h2 className="text-2xl md:text-3xl font-semibold mb-4">contact</h2>
       <div className="grid gap-3">
         <label className="text-sm">
           Name

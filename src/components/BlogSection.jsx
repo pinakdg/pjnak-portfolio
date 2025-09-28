@@ -7,7 +7,7 @@ export default function BlogSection(){
 
   return (
     <section id="blog" className="max-w-6xl mx-auto px-4 py-12">
-      <h2 className="text-2xl md:text-3xl font-semibold mb-6">Blog</h2>
+      <h2 className="text-2xl md:text-3xl font-semibold mb-6">blog</h2>
 
       <div className="space-y-4">
         {posts.map((p, idx) => {
