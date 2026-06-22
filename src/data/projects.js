@@ -12,15 +12,21 @@ export default [
     link: "https://github.com/pinakdg"
   },
   {
-    title: "Drift Visualizer",
-    description: "Streamlit app that visualizes similarity matrices, MI/z‑scores, and accuracy drift.",
-    stack: ["Streamlit","Plotly","Python"],
+    title: "Cryptanalysis",
+    description: "Cryptanalysis of a system and breaking the password.",
+    stack: ["Kali Linux","Pentesting","Bash","Cryptography"],
     link: "https://github.com/pinakdg"
   },
   {
     title: "Security Audit Notes",
     description: "OWASP Juice Shop → SFR mapping and MySQL security target notes.",
     stack: ["Security","OWASP","Docs"],
+    link: "https://github.com/pinakdg"
+  },
+  {
+    title: "Forensic analysis of a disk",
+    description: "Carving and forensically analysing a disk.",
+    stack: ["Autopsy","fdist","Data carving"],
     link: "https://github.com/pinakdg"
   }
 ]
