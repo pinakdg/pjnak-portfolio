@@ -16,6 +16,18 @@ export default [
     date: "2025-08-25",
     file:"update-to-site.md",
     summary: "update to portfolio site."
+  },
+  {
+    title: "updates",
+    date: "2025-10-06",
+    file:"life-update.md",
+    summary: "some general updates and whereabouts."
+  },
+  {
+    title: "updates",
+    date: "2026-06-22",
+    file:"life-update1.md",
+    summary: "more general updates and whereabouts."
   }
 ]
 

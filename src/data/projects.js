@@ -5,10 +5,16 @@ export default [
     stack: ["Python","Pandas","scikit‑learn","River"],
     link: "https://github.com/pinakdg"
   },
+  // {
+  //   title: "UEFI Bootloader (Rust)",
+  //   description: "Experimental x86_64 UEFI loader with a tiny shell, built and tested via QEMU + OVMF.",
+  //   stack: ["Rust","QEMU","OVMF"],
+  //   link: "https://github.com/pinakdg"
+  // },
   {
-    title: "UEFI Bootloader (Rust)",
-    description: "Experimental x86_64 UEFI loader with a tiny shell, built and tested via QEMU + OVMF.",
-    stack: ["Rust","QEMU","OVMF"],
+    title: "Password Keychain (In-Progress)",
+    description: "A hardware password wallet, coded in C and database managed using PostgreSQL",
+    stack: ["C","PostgreSQL","Cryptography","OpenSSL","Libraries Development"],
     link: "https://github.com/pinakdg"
   },
   {

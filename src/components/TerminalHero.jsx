@@ -30,10 +30,12 @@ export default function TerminalHero(){
   return (
     <div className="mt-10 grid md:grid-cols-2 gap-8 items-center">
       <div className="order-2 md:order-1">
-        <h1 className="text-3xl md:text-5xl font-semibold tracking-tight mb-3">hi i am pinak, educated in security and passionate in open source, feel free to contact me.</h1>
-        <p className="text-gray-400">pen-testing • bug bounty • malware analysis • rust & c systems • clean, practical tooling.</p>
+        <h1 className="text-3xl md:text-5xl font-semibold tracking-tight mb-3">hi; i am pinak, educated in cyber-security and passionate in open source, feel free to contact me.</h1>
+        <p className="text-gray-400">pen-testing • red-team operations • bug bounty • malware analysis • rust & c system/exploit development • clean practical tooling.</p>
         <div className="mt-6 flex gap-3 text-sm">
           <a href="#projects" className="px-3 py-1.5 rounded-lg border border-gray-700 hover:border-gray-500">View Projects</a>
+          <a href="https://medium.com/@pjnak"target="_blank" rel="noreferrer" className="px-3 py-1.5 rounded-lg border border-gray-700 hover:border-gray-500">Medium</a>
+          <a href="https://github.com/pinakdg"target="_blank" rel="noreferrer" className="px-3 py-1.5 rounded-lg border border-gray-700 hover:border-gray-500">GitHub</a>
           <a href="#contact" className="px-3 py-1.5 rounded-lg bg-white text-gray-900">Contact</a>
         </div>
       </div>
